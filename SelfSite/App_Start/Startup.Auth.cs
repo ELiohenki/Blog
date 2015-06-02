@@ -54,9 +54,9 @@ namespace SelfSite
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "447538578729057",
+               appSecret: "2560f33e9897fca2642ceca0b3f80261");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

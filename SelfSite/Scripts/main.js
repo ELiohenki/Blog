@@ -1,4 +1,4 @@
-﻿var Posts;
+var Posts;
 (function (Posts) {
     var Post = (function () {
         function Post() {
