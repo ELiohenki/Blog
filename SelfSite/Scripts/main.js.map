@@ -1,1 +1,1 @@
-{"version":3,"file":"main.js","sourceRoot":"","sources":["main.ts"],"names":["Posts","Posts.Post","Posts.Post.constructor","Posts.Post.GetPreviw"],"mappings":"AAAA,IAAO,KAAK,CAWX;AAXD,WAAO,KAAK,EAAC,CAAC;IAIVA,IAAaA,IAAIA;QAAjBC,SAAaA,IAAIA;QAMjBC,CAACA;QAJGD,wBAASA,GAATA,UAAUA,EAAUA;YAEhBE,MAAMA,CAACA,GAAGA,CAACA;QACfA,CAACA;QACLF,WAACA;IAADA,CAACA,AANDD,IAMCA;IANYA,UAAIA,GAAJA,IAMZA,CAAAA;AACLA,CAACA,EAXM,KAAK,KAAL,KAAK,QAWX"}
+{"version":3,"file":"main.js","sourceRoot":"","sources":["main.ts"],"names":[],"mappings":"AAAA,OAAO,CAAC,MAAM,CAAC,UAAU,EAAE,EAAE,CAAC,CAAC"}

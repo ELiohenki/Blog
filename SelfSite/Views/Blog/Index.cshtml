@@ -1,13 +1,21 @@
-﻿<!DOCTYPE html>
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yauheni Liohenki - @ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width" />
+    @Scripts.Render("~/Scripts/angular.js")
+    @Scripts.Render("~/Scripts/main.js")
+    @Scripts.Render("~/Scripts/types.js")
+    @Scripts.Render("~/Scripts/controller/BlogController.js")
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Scripts/Blog/PostDirective/Post.js")
+    <title>Blog</title>
 </head>
-<body>
+<body ng-app="selfsite">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -21,7 +29,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about" class="scroll-to" title="About">About</a>
+                        <a href="/" class="scroll-to" title="About">About</a>
                     </li>
                     <li>
                         <a href="/blog" class="scroll-to" title="Blog">Blog</a>
@@ -31,15 +39,12 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
-        <hr />
+        <div ng-controller="BlogCtrl as ctrl">
+            <post ng-repeat="i in [1, 2, 3, 4, 5, 6]" post="ctrl.getPost(i)"></post>
+        </div>
         <footer>
-            <p>&copy; @DateTime.Now.Year - Yauheni Liohenki Site</p>
+            <p>&copy; @DateTime.Now.Year - Yauheni Liohenki Blog</p>
         </footer>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
