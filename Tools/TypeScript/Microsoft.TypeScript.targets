@@ -103,7 +103,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
     <VsTsc
       ToolPath="$(TscToolPath)"
       ToolExe="$(TscToolExe)"
-      Configurations="$(TypeScriptBuildConfigurations) COMPUTE_PATHS_ONLY"
+      Configurations="$(TypeScriptBuildConfigurations)"
       FullPathsToFiles="@(TypeScriptCompile)"
       YieldDuringToolExecution="$(TscYieldDuringToolExecution)"
       OutFile="$(TypeScriptOutFile)"
