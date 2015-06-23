@@ -828,6 +828,7 @@
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
     <Content Include="Scripts\jasmine-html.js" />
     <Content Include="Scripts\jasmine.js" />
+    <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
