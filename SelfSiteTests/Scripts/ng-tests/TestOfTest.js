@@ -48,28 +48,30 @@ describe('sorting the list of users', function () {
 
     beforeEach(function () {
         module(function ($provide) {
-            $provide.service('$http', function () {
-                var spy = jasmine.createSpy('get');
-                spy = spy.andCallFake(function (num) {
-                    return new function () {
-                        var then = function(asd) {};
-                    };
-                });;
-                this.get = spy;
-            });
+            /*$provide.service('$http', function () {
+                this.get = jasmine.createSpy('get');
+            });*/
         });
         module('selfsite');
     });
 
     beforeEach(inject(function ($http, tumblrService) {
-        tumblrServiceObj = $http;
+        $httpObj = $http;
         tumblrServiceObj = tumblrService;
     }));
 
-    it('sorts in descending order by default', function () {
-        var data = tumblrServiceObj.getPosts(0, 10);
-        throw new EventException(data.toString());
-        expect(data).toNotEqual(null);
+    it('sorts in descending order by default', function() {
+        var dataPromise = tumblrServiceObj.getPosts();
+        var toReturn;
+        dataPromise.then(function(result) {
+            toReturn = JSON.parse(result).response.posts.slice(offset, offset + count);
+        });
+        var millisecondsToWait = 5000;
+        setTimeout(function (toReturn) {
+                throw new Error(toReturn.toString());
+                expect(toReturn).toNotEqual(null);
+        }(toReturn), millisecondsToWait);
+        
     });
 });
 
