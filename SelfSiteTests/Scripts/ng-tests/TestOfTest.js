@@ -44,10 +44,10 @@ describe('lalaala', function () {
 
 
 describe('sorting the list of users', function () {
-    var tumblrServiceObj, $httpObj;
+    var tumblrServiceObj, $httpObj, deferred;
 
     beforeEach(function () {
-        module(function ($provide) {
+        module(function ($provide, $q) {
             $provide.service('$http', function () {
                 var spy = jasmine.createSpy('get');
                 spy = spy.andCallFake(function (num) {
@@ -57,6 +57,7 @@ describe('sorting the list of users', function () {
                 });;
                 this.get = spy;
             });
+            deferred = $q.defer();
         });
         module('selfsite');
     });
