@@ -1,10 +1,12 @@
 var tumblrService = function ($http) {
-    this.getPosts = function (offset, count) {
+    var getPosts = function () {
         var url = 'http://api.tumblr.com/v2/blog/eliohenki.tumblr.com/posts/text';
-        return $http.get(url).then(function (response) { return JSON.parse(response).response.posts.slice(offset, offset + count); });
+        var myDataPromise = $http.get(url);
+        return myDataPromise;
     };
+    return { getPosts: getPosts };
 };
-angular.module("selfsite").service("tumblrService", ['$http', tumblrService]);
+angular.module("selfsite").service("tumblrService", ['$http', '$timeout', tumblrService]);
 var sampleSvc = function ($window, modalSvc) {
     this.showDialog = function (message, title) {
         if (title) {

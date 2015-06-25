@@ -47,7 +47,7 @@ describe('sorting the list of users', function () {
     var tumblrServiceObj, $httpObj, deferred;
 
     beforeEach(function () {
-        module(function ($provide, $q) {
+        module(function ($provide) {
             $provide.service('$http', function () {
                 var spy = jasmine.createSpy('get');
                 spy = spy.andCallFake(function (num) {
@@ -57,20 +57,28 @@ describe('sorting the list of users', function () {
                 });;
                 this.get = spy;
             });
-            deferred = $q.defer();
         });
         module('selfsite');
     });
 
-    beforeEach(inject(function ($http, tumblrService) {
-        tumblrServiceObj = $http;
+    beforeEach(inject(function ($http, tumblrService, $q) {
+        $httpObj = $http;
         tumblrServiceObj = tumblrService;
+        deferred = $q.defer();
     }));
 
-    it('sorts in descending order by default', function () {
-        var data = tumblrServiceObj.getPosts(0, 10);
-        throw new EventException(data.toString());
-        expect(data).toNotEqual(null);
+    it('sorts in descending order by default', function() {
+        var dataPromise = tumblrServiceObj.getPosts();
+        var toReturn;
+        dataPromise.then(function(result) {
+            toReturn = JSON.parse(result).response.posts.slice(offset, offset + count);
+        });
+        var millisecondsToWait = 5000;
+        setTimeout(function (toReturn) {
+                throw new Error(toReturn.toString());
+                expect(toReturn).toNotEqual(null);
+        }(toReturn), millisecondsToWait);
+        
     });
 });
 
