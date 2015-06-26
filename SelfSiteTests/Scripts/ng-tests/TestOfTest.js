@@ -48,15 +48,6 @@ describe('sorting the list of users', function () {
 
     beforeEach(function () {
         module(function ($provide) {
-            $provide.service('$http', function () {
-                var spy = jasmine.createSpy('get');
-                spy = spy.andCallFake(function (num) {
-                    return new function () {
-                        var then = function(asd) {};
-                    };
-                });;
-                this.get = spy;
-            });
         });
         module('selfsite');
     });
@@ -65,20 +56,18 @@ describe('sorting the list of users', function () {
         $httpObj = $http;
         tumblrServiceObj = tumblrService;
         deferred = $q.defer();
+        deferred.resolve('somevalue');
+        spyOn($http, "get").and.callFake(function () {
+            return deferred.promise;
+        });
     }));
 
     it('sorts in descending order by default', function() {
         var dataPromise = tumblrServiceObj.getPosts();
         var toReturn;
         dataPromise.then(function(result) {
-            toReturn = JSON.parse(result).response.posts.slice(offset, offset + count);
+            toReturn = result;//.response.posts.slice(offset, offset + count);
         });
-        var millisecondsToWait = 5000;
-        setTimeout(function (toReturn) {
-                throw new Error(toReturn.toString());
-                expect(toReturn).toNotEqual(null);
-        }(toReturn), millisecondsToWait);
-        
     });
 });
 
