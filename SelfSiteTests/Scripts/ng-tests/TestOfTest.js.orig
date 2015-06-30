@@ -44,40 +44,42 @@ describe('lalaala', function () {
 
 
 describe('sorting the list of users', function () {
-    var tumblrServiceObj, $httpObj, deferred, $rootScopeObj;
+    var tumblrServiceObj, $httpObj, deferred;
 
     beforeEach(function () {
         module(function ($provide) {
+            /*$provide.service('$http', function () {
+                var spy = jasmine.createSpy('get');
+                this.get = spy;
+            });*/
         });
         module('selfsite');
     });
 
-    beforeEach(inject(function ($http, tumblrService, $q, $rootScope) {
+    beforeEach(inject(function ($http, tumblrService, $q) {
         $httpObj = $http;
         tumblrServiceObj = tumblrService;
         deferred = $q.defer();
-        $rootScopeObj = $rootScope;
-        spyOn($http, "get").and.returnValue(deferred.promise);
-        deferred.resolve();
+        deferred.resolve('somevalue');
+        spyOn($http, "get").and.callFake(function () {
+            return deferred.promise;
+        });
     }));
 
     it('sorts in descending order by default', function() {
         var dataPromise = tumblrServiceObj.getPosts();
-        var toReturn = "";
+        var toReturn;
+        dataPromise.then(function(result) {
+            toReturn = result;//.response.posts.slice(offset, offset + count);
+        });
         var millisecondsToWait = 5000;
-        var scope = $rootScopeObj.$new();
-        var httpPromise = $httpObj.get("http://www.asdasd.ru");
-        httpPromise.then(function () {
-            toReturn += "asdasd" + "asdasd";//.response.posts.slice(offset, offset + count);
-        });
-        dataPromise.then(function () {
-            toReturn += "123123" + "123123";//.response.posts.slice(offset, offset + count);
-        });
-        deferred.resolve();
-        $rootScopeObj.$digest();
-        expect(toReturn).not.toBe("");
+        this.$rootScope.$apply();
         setTimeout(function () {
+            //this.$rootScope.$apply();
+                throw new Error(toReturn.toString());
+                expect(toReturn).toNotEqual(null);
         }, millisecondsToWait);
+        //this.$rootScope.$apply();
     });
 });
 
