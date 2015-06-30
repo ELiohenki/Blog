@@ -68,6 +68,8 @@ describe('sorting the list of users', function () {
         dataPromise.then(function(result) {
             toReturn = result;//.response.posts.slice(offset, offset + count);
         });
+        setTimeout(function () {
+        }, millisecondsToWait);
     });
 });
 
