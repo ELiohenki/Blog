@@ -44,7 +44,7 @@ describe('lalaala', function () {
 
 
 describe('sorting the list of users', function () {
-    var tumblrServiceObj, $httpObj, deferred;
+    var tumblrServiceObj, $httpObj, deferred, $rootScopeObj;
 
     beforeEach(function () {
         module(function ($provide) {
@@ -52,22 +52,30 @@ describe('sorting the list of users', function () {
         module('selfsite');
     });
 
-    beforeEach(inject(function ($http, tumblrService, $q) {
+    beforeEach(inject(function ($http, tumblrService, $q, $rootScope) {
         $httpObj = $http;
         tumblrServiceObj = tumblrService;
         deferred = $q.defer();
-        deferred.resolve('somevalue');
-        spyOn($http, "get").and.callFake(function () {
-            return deferred.promise;
-        });
+        $rootScopeObj = $rootScope;
+        spyOn($http, "get").and.returnValue(deferred.promise);
+        deferred.resolve();
     }));
 
     it('sorts in descending order by default', function() {
         var dataPromise = tumblrServiceObj.getPosts();
-        var toReturn;
-        dataPromise.then(function(result) {
-            toReturn = result;//.response.posts.slice(offset, offset + count);
+        var toReturn = "";
+        var millisecondsToWait = 5000;
+        var scope = $rootScopeObj.$new();
+        var httpPromise = $httpObj.get("http://www.asdasd.ru");
+        httpPromise.then(function () {
+            toReturn += "asdasd" + "asdasd";//.response.posts.slice(offset, offset + count);
         });
+        dataPromise.then(function () {
+            toReturn += "123123" + "123123";//.response.posts.slice(offset, offset + count);
+        });
+        deferred.resolve();
+        $rootScopeObj.$digest();
+        expect(toReturn).not.toBe("");
         setTimeout(function () {
         }, millisecondsToWait);
     });
