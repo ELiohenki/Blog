@@ -11,7 +11,7 @@
 
 angular
     .module("selfsite")
-    .service("tumblrService", ['$http', '$timeout', tumblrService]);
+    .service("tumblrService", ['$http', tumblrService]);
 
 var sampleSvc = function($window, modalSvc) {
     this.showDialog = function(message, title) {

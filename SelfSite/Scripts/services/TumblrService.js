@@ -6,7 +6,7 @@ var tumblrService = function ($http) {
     };
     return { getPosts: getPosts };
 };
-angular.module("selfsite").service("tumblrService", ['$http', '$timeout', tumblrService]);
+angular.module("selfsite").service("tumblrService", ['$http', tumblrService]);
 var sampleSvc = function ($window, modalSvc) {
     this.showDialog = function (message, title) {
         if (title) {
