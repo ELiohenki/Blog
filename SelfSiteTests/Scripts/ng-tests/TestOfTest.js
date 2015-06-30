@@ -44,14 +44,10 @@ describe('lalaala', function () {
 
 
 describe('sorting the list of users', function () {
-    var tumblrServiceObj, $httpObj, deferred, $rootScope;
+    var tumblrServiceObj, $httpObj, deferred;
 
     beforeEach(function () {
         module(function ($provide) {
-            $provide.service('$http', function () {
-                var spy = jasmine.createSpy('get');
-                this.get = spy;
-            });
         });
         module('selfsite');
     });
@@ -60,24 +56,20 @@ describe('sorting the list of users', function () {
         $httpObj = $http;
         tumblrServiceObj = tumblrService;
         deferred = $q.defer();
-        deferred.resolve({ superValue111: "456456", superValue222: "123123" });
+        deferred.resolve('somevalue');
+        spyOn($http, "get").and.callFake(function () {
+            return deferred.promise;
+        });
     }));
 
     it('sorts in descending order by default', function() {
         var dataPromise = tumblrServiceObj.getPosts();
         var toReturn;
         dataPromise.then(function(result) {
-            toReturn = JSON.parse(result).response.posts.slice(offset, offset + count);
+            toReturn = result;//.response.posts.slice(offset, offset + count);
         });
-        var millisecondsToWait = 5000;
-        //this.$rootScope.$apply();
-        setTimeout(function (toReturn) {
-            //this.$rootScope.$apply();
-                throw new Error(toReturn.toString());
-                expect(toReturn).toNotEqual(null);
-        }(toReturn), millisecondsToWait);
-        //this.$rootScope.$apply();
-        
+        setTimeout(function () {
+        }, millisecondsToWait);
     });
 });
 
