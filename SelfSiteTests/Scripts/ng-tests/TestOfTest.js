@@ -58,7 +58,7 @@ describe('sorting the list of users', function () {
         deferred = $q.defer();
         $rootScopeObj = $rootScope;
         spyOn($http, "get").and.returnValue(deferred.promise);
-        deferred.resolve();
+        deferred.resolve('SuperPromiseResolved');
     }));
 
     it('sorts in descending order by default', function() {
@@ -66,9 +66,9 @@ describe('sorting the list of users', function () {
         var toReturn = "";
         var millisecondsToWait = 5000;
         var scope = $rootScopeObj.$new();
-        var httpPromise = $httpObj.get("http://www.asdasd.ru");
-        httpPromise.then(function () {
-            toReturn += "asdasd" + "asdasd";//.response.posts.slice(offset, offset + count);
+        var httpPromise = $httpObj.get("http://api.tumblr.com/v2/blog/eliohenki.tumblr.com/posts/text");
+        httpPromise.then(function (result) {
+            toReturn += result;//.response.posts.slice(offset, offset + count);
         });
         dataPromise.then(function () {
             toReturn += "123123" + "123123";//.response.posts.slice(offset, offset + count);
