@@ -1034,9 +1034,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\blog\PostDirective\Post.ts" />
-    <TypeScriptCompile Include="Scripts\controllers\BlogController.ts" />
+    <TypeScriptCompile Include="Scripts\blog\BlogController.ts" />
     <TypeScriptCompile Include="Scripts\main.ts" />
-    <TypeScriptCompile Include="Scripts\services\tumblrService.ts" />
+    <TypeScriptCompile Include="Scripts\blog\tumblrService.ts" />
     <TypeScriptCompile Include="Scripts\types.ts" />
     <TypeScriptCompile Include="Scripts\typing\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typing\jquery.d.ts" />
