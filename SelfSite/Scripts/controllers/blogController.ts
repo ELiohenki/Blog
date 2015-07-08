@@ -1,34 +1,29 @@
-﻿module Selfsite {
+﻿module Selfsite.Blog {
+    import ITumblrService = Tumblr.ITumblrService;
+
     export class BlogController {
         
         posts: Array<Post>;
 
-        constructor() {
+        static $inject = ["tumblrService"];
+
+        constructor(protected tumblrService: ITumblrService) {
             this.init();
         }
 
         init() {
             this.posts = new Array<Post>();
-            for (var i = 0; i < 20; ++i)
-                this.posts[i] = this.createPost(i);
+            this.tumblrService.getPosts().then((retPosts) => {
+                this.posts = retPosts;
+            });
         }
 
-        createPost(id: number) : Post {
-            var post = new Post();
-            post.header = "This is " + id + " post";
-            post.body = "<p>SuperPost</p> I like it";
-            post.url = "www.google." + id;
-            post.id = id;
-
-            return post;
-        }
-
-        getPost(id: number): Post {
-            return this.posts[id];
+        getPosts() {
+            return this.posts;
         }
     }
 
     angular
         .module("selfsite")
-        .controller("BlogCtrl", BlogController);
+        .controller("blogController", BlogController);
 }

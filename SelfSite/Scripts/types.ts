@@ -6,5 +6,6 @@ module Selfsite
         body: string;
         url: string;
         id: number;
+        time: Date;
     }
 }

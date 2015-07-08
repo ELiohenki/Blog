@@ -10,7 +10,7 @@
     @Scripts.Render("~/Scripts/angular.js")
     @Scripts.Render("~/Scripts/main.js")
     @Scripts.Render("~/Scripts/types.js")
-    @Scripts.Render("~/Scripts/controller/BlogController.js")
+    @Scripts.Render("~/Scripts/controllers/BlogController.js")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/Scripts/Blog/PostDirective/Post.js")
     <title>Blog</title>
@@ -39,8 +39,8 @@
         </div>
     </div>
     <div class="container body-content">
-        <div ng-controller="BlogCtrl as ctrl">
-            <post ng-repeat="i in [1, 2, 3, 4, 5, 6]" post="ctrl.getPost(i)"></post>
+        <div ng-controller="blogController as ctrl">
+            <post ng-repeat="post in ctrl.getPosts()" post="post"></post>
         </div>
         <footer>
             <p>&copy; @DateTime.Now.Year - Yauheni Liohenki Blog</p>
