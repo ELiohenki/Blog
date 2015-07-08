@@ -1,31 +1,37 @@
 var Selfsite;
 (function (Selfsite) {
-    var Tumblr;
-    (function (Tumblr) {
+    var Blog;
+    (function (Blog) {
         "use strict";
         var TumblrService = (function () {
-            function TumblrService($http, $q) {
+            function TumblrService($http, $q, $sce) {
                 this.$http = $http;
                 this.$q = $q;
+                this.$sce = $sce;
             }
             TumblrService.prototype.getPosts = function () {
-                var url = 'http://api.tumblr.com/v2/blog/eliohenki.tumblr.com/posts/text';
-                var myDataPromise = this.$http.get(url);
+                var _this = this;
+                var url = 'http://api.tumblr.com/v2/blog/eliohenki.tumblr.com/posts/text?callback=angular.callbacks._0';
+                var myDataPromise = this.$http.jsonp(url);
                 var deferred = this.$q.defer();
                 myDataPromise.success(function (result) {
-                    var retObject = JSON.parse(result.toString());
                     var posts = new Array();
-                    retObject["response"]["posts"].forEach(function (postObj) {
+                    result["response"]["posts"].forEach(function (postObj) {
                         var post = new Selfsite.Post();
-                        post.body = postObj.trail.content;
+                        post.body = _this.$sce.trustAsHtml(postObj.body);
+                        post.header = _this.$sce.trustAsHtml(postObj.title);
+                        post.id = postObj.id;
+                        post.time = postObj.date;
                         posts.push(post);
                     });
                     deferred.resolve(posts);
                 });
                 return deferred.promise;
             };
+            TumblrService.prototype.myCallback = function (data) {
+            };
             TumblrService.prototype.getFilteredPosts = function (offset, fetch) {
-                var url = 'http://api.tumblr.com/v2/blog/eliohenki.tumblr.com/posts/text';
+                var url = 'http://api.tumblr.com/v2/blog/eliohenki.tumblr.com/posts/text?callback=myCallback';
                 var myDataPromise = this.$http.get(url);
                 var deferred = this.$q.defer();
                 myDataPromise.success(function (result) {
@@ -45,12 +51,12 @@ var Selfsite;
                 });
                 return deferred.promise;
             };
-            TumblrService.$inject = ["$http", "$q"];
+            TumblrService.$inject = ["$http", "$q", "$sce"];
             return TumblrService;
         })();
-        Tumblr.TumblrService = TumblrService;
+        Blog.TumblrService = TumblrService;
         ;
         angular.module("selfsite").service("tumblrService", TumblrService);
-    })(Tumblr = Selfsite.Tumblr || (Selfsite.Tumblr = {}));
+    })(Blog = Selfsite.Blog || (Selfsite.Blog = {}));
 })(Selfsite || (Selfsite = {}));
 //# sourceMappingURL=tumblrService.js.map

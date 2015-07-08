@@ -1,6 +1,4 @@
 ﻿module Selfsite.Blog {
-    import ITumblrService = Tumblr.ITumblrService;
-
     export class BlogController {
         
         posts: Array<Post>;
