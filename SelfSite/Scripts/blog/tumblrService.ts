@@ -27,7 +27,8 @@
                     post.body = this.$sce.trustAsHtml(postObj.body);
                     post.header = this.$sce.trustAsHtml(postObj.title);
                     post.id = postObj.id;
-                    post.time = postObj.date;
+                    post.date = new Date(postObj.date);
+                    post.url = postObj.post_url;
                     posts.push(post);
                 });
                 deferred.resolve(posts);
@@ -51,7 +52,7 @@
                     post.body = postObj.body;
                     post.header = postObj.title;
                     post.id = postObj.id;
-                    post.time = postObj.date;
+                    post.date = postObj.date;
                     post.url = postObj.post_url;
                     posts.push(post);
                 });

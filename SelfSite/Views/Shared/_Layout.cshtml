@@ -6,8 +6,9 @@
     <title>Yauheni Liohenki - @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("head");
 </head>
-<body>
+<body ng-app="selfsite">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -19,17 +20,11 @@
                 @Html.ActionLink("YAUHENI LIOHENKI", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about" class="scroll-to" title="About">About</a>
-                    </li>
-                    <li>
-                        <a href="/blog" class="scroll-to" title="Blog">Blog</a>
-                    </li>
-                </ul>
+                @Html.MvcSiteMap().Menu()
             </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />

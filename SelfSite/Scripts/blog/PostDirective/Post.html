@@ -1,6 +1,13 @@
-﻿<div class="blogpost">
-    <div class="postheader" ng-bind-html="header">
-    </div>
-    <div class="postbody" ng-bind-html="body">
-    </div>
+﻿<div class="blogpost post text">
+    <h2 class="postheader">
+        <a ng-href="{{post.url}}" ng-bind-html="post.header"></a>
+    </h2>
+    <p>
+        <a ng-href="{{post.url}}">{{post.date | date:'fullDate'}}</a>
+    </p>
+    <p class="postbody" ng-bind-html="post.body">
+    </p>
+    <p>
+        <a ng-href="{{post.url}}">Keep reading</a>
+    </p>
 </div>
