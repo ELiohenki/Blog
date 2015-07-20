@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("head")
 </head>
-<body ng-app="selfsite">
+<body id="page-top" ng-app="selfsite">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -17,24 +17,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("YAUHENI LIOHENKI", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a href="@Url.Action("Index", "Home")#page-top" class="navbar-brand">YAUHENI LIOHENKI</a>
             </div>
             <div class="navbar-collapse collapse">
                 @Html.MvcSiteMap().Menu()
             </div>
         </div>
     </div>
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Yauheni Liohenki Site</p>
-        </footer>
-    </div>
+    @RenderBody()
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Yauheni Liohenki Site</p>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/cbpAnimatedHeader.js")
     @RenderSection("scripts", required: false)
 </body>
 </html>

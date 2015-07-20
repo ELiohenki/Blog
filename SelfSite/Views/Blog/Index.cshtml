@@ -16,9 +16,11 @@
     <title>Blog</title>
 }
 
-<div class="row" ng-controller="blogController as ctrl">
-    <div class="col-md-8">
-        <post ng-repeat="post in ctrl.getPosts()" post="post"></post>
+<div class="container body-content">
+    <div class="row" ng-controller="blogController as ctrl">
+        <div class="col-md-8">
+            <post ng-repeat="post in ctrl.getPosts()" post="post"></post>
+        </div>
     </div>
 </div>
 
