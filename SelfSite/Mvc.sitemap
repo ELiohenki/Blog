@@ -5,6 +5,7 @@
 
   <mvcSiteMapNode title="Home" url="#home">
     <mvcSiteMapNode title="About" url="#about" />
+    <mvcSiteMapNode title="Services" url="#services" />
     <mvcSiteMapNode title="Blog" controller="Blog" action="Index"/>
   </mvcSiteMapNode>
 

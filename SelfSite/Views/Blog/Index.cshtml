@@ -15,8 +15,7 @@
     @Scripts.Render("~/Scripts/Blog/PostDirective/Post.js")
     <title>Blog</title>
 }
-
-<div class="container body-content">
+<div class="container">
     <div class="row" ng-controller="blogController as ctrl">
         <div class="col-md-8">
             <post ng-repeat="post in ctrl.getPosts()" post="post"></post>
