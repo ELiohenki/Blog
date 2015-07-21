@@ -9,20 +9,20 @@
     @RenderSection("head")
 </head>
 <body id="page-top" ng-app="selfsite">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="@Url.Action("Index", "Home")#page-top" class="navbar-brand">YAUHENI LIOHENKI</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                @Html.MvcSiteMap().Menu()
-            </div>
+    <div class=" navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="@Url.Action("Index", "Home")#page-top" class="navbar-brand">YAUHENI LIOHENKI</a>
         </div>
+        <div class="navbar-collapse collapse">
+            @Html.MvcSiteMap().Menu()
+        </div>
+    </div>
     </div>
     @RenderBody()
     <footer>
@@ -31,7 +31,6 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/Scripts/cbpAnimatedHeader.js")
     @RenderSection("scripts", required: false)
 </body>
 </html>
