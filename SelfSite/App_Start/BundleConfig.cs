@@ -23,6 +23,9 @@ namespace SelfSite
                       "~/Scripts/libs/bootstrap/bootstrap.js",
                       "~/Scripts/libs/bootstrap/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/isotope").Include(
+                      "~/Scripts/libs/isotope/isotope.pkgd.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",

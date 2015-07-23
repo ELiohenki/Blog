@@ -6,10 +6,11 @@
 @section head
 {
     @Scripts.Render("~/Scripts/cbpAnimatedHeader.js")
+    @Scripts.Render("~/bundles/isotope")
     @Styles.Render("~/Content/mainpage.css")
 }
 
-<header id="home">
+<header id="home" class="jumbotron">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -32,28 +33,28 @@
                 <hr class="star-primary thick-light">
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 services-item" data-delay="0">
-                <i class="col-sm-1 fa fa-globe fa-2x fa-fw"></i>
-                <div class="col-sm-10 iconbox-content">
+        <div class="list-group services-list">
+            <div class="col-sm-4 list-group-item clearfix" data-delay="0">
+                <i class="col-sm-2 fa fa-globe fa-2x fa-fw"></i>
+                <div class="col-sm-10">
                     <h5><strong>Web development</strong></h5>
                     <p>
                         I create web sites, single page applications.
                     </p>
                 </div>
             </div>
-            <div class="col-sm-4 services-item" data-delay="200">
-                <i class="col-sm-1 fa fa-mobile fa-2x fa-fw"></i>
-                <div class="col-sm-10 iconbox-content">
+            <div class="col-sm-4 list-group-item" data-delay="200">
+                <i class="col-sm-2 fa fa-mobile fa-2x fa-fw"></i>
+                <div class="col-sm-10">
                     <h5><strong>Mobile development</strong></h5>
                     <p>
                         Applications for Android, IOs.
                     </p>
                 </div>
             </div>
-            <div class="col-sm-4 services-item" data-delay="400">
-                <i class="col-sm-1 fa fa-database fa-2x fa-fw"></i>
-                <div class="col-sm-10 iconbox-content">
+            <div class="col-sm-4 list-group-item" data-delay="400">
+                <i class="col-sm-2 fa fa-database fa-2x fa-fw"></i>
+                <div class="col-sm-10">
                     <h5><strong>Database development</strong></h5>
                     <p>
                         Creatng scheme, optimization of MS SQL, MondoDB, Cassandra databases.
@@ -61,58 +62,65 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section id="service" class="service-llight text-light">
-    <div class="section-inner">
-        <div class="wrapper">
-
-            <div class="column-section clearfix">
-                <div class="column one-third iconbox clearfix sr-animation sr-animation-frombottom animated" data-delay="0">
-                    <i class="fa fa-laptop fa-2x fa-fw"></i>
-                    <div class="iconbox-content">
-                        <h5><strong>User Interface Design</strong></h5>
-                        <p>
-                            I create user interfaces for web, iOS &amp; Android.
-                        </p>
-                    </div>
-                </div>
-                <div class="column one-third iconbox clearfix sr-animation sr-animation-frombottom animated" data-delay="200">
-                    <i class="fa fa-smile-o fa-2x fa-fw"></i>
-                    <div class="iconbox-content">
-                        <h5><strong>User Experience Design</strong></h5>
-                        <p>
-                            Part of designing great UIs is doing it with all aspects that come with User Experience.
-                        </p>
-                    </div>
-                </div>
-                <div class="column one-third last-col iconbox clearfix sr-animation sr-animation-frombottom animated" data-delay="400">
-                    <i class="fa fa-mobile fa-2x fa-fw"></i>
-                    <div class="iconbox-content">
-                        <h5><strong>Responsive Web Design</strong></h5>
-                        <p>
-                            My process when doing web design is mobile first. I design web sites and web apps which will look superb on your smartphone.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div> <!-- END .wrapper -->
-
-        <div class="spacer spacer-big"></div>
-
-        <div id="see-portfolio" class="horizontalsection text-light">
-            <div class="horizontalinner wrapper">
+        <div id="see-portfolio" class="row">
+            <div class="col-sm-12 hire-me-button">
                 <h4 class="align-center"><strong>HIRE ME NOW</strong></h4>
                 <p class="align-center">
                     <a href="#contact" data-type="video" class="scroll-smooth sr-button sr-buttonicon scroll-to"><i class="fa fa-angle-down fa-fw"></i></a>
                 </p>
             </div>
-        </div> <!-- END #see-portfolio-->
-
-    </div> <!-- END .section-inner-->
+        </div>
+    </div>
 </section>
+
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Portfolio</h2>
+                <hr class="star-primary thick-light">
+            </div>
+        </div>
+        <div class="list-group services-list">
+            <div class="col-sm-4 list-group-item clearfix" data-delay="0">
+                <i class="col-sm-2 fa fa-globe fa-2x fa-fw"></i>
+                <div class="col-sm-10">
+                    <h5><strong>Web development</strong></h5>
+                    <p>
+                        I create web sites, single page applications.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 list-group-item" data-delay="200">
+                <i class="col-sm-2 fa fa-mobile fa-2x fa-fw"></i>
+                <div class="col-sm-10">
+                    <h5><strong>Mobile development</strong></h5>
+                    <p>
+                        Applications for Android, IOs.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 list-group-item" data-delay="400">
+                <i class="col-sm-2 fa fa-database fa-2x fa-fw"></i>
+                <div class="col-sm-10">
+                    <h5><strong>Database development</strong></h5>
+                    <p>
+                        Creatng scheme, optimization of MS SQL, MondoDB, Cassandra databases.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="see-portfolio" class="row">
+            <div class="col-sm-12 hire-me-button">
+                <h4 class="align-center"><strong>HIRE ME NOW</strong></h4>
+                <p class="align-center">
+                    <a href="#contact" data-type="video" class="scroll-smooth sr-button sr-buttonicon scroll-to"><i class="fa fa-angle-down fa-fw"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <section id="about" class="row">
     <div class="col-md-4">
@@ -122,16 +130,28 @@
             enables a clean separation of concerns and gives you full control over markup
             for enjoyable, agile development.
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p>
+            <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a>
+        </p>
     </div>
     <div class="col-md-4">
         <h2>Get more libraries</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <p>
+            <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a>
+        </p>
     </div>
     <div class="col-md-4">
         <h2>Web Hosting</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <p>
+            <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a>
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <p>This is contacts section</p>
     </div>
 </section>
