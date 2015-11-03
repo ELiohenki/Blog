@@ -1006,6 +1006,7 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
+    <Content Include="Scripts\libs\isotope\isotope.pkgd.js" />
     <Content Include="Scripts\libs\jquery\jquery-1.10.2.js" />
     <Content Include="Scripts\libs\jquery\jquery-1.10.2.min.js" />
     <None Include="Scripts\libs\jquery\jquery.validate-vsdoc.js" />

@@ -10,5 +10,4 @@
     <mvcSiteMapNode title="Contact" url="#contact" />
     <mvcSiteMapNode title="Blog" controller="Blog" action="Index"/>
   </mvcSiteMapNode>
-
 </mvcSiteMap>
