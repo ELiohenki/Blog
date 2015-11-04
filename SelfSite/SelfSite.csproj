@@ -199,6 +199,11 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Images\Expertise\angular.png" />
+    <Content Include="Content\Images\Expertise\asp_net.png" />
+    <Content Include="Content\Images\Expertise\net_framework.png" />
+    <Content Include="Content\Images\Expertise\xamarin.png" />
+    <Content Include="Content\Images\profile.jpg" />
     <Content Include="Content\mainpage.css" />
     <Content Include="Images\net_framework.png" />
     <Content Include="Images\profile.jpg" />
