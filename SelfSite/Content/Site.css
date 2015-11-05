@@ -30,5 +30,27 @@ textarea {
 }
 
 section {
-  padding: 100px 0;
+    padding: 100px 0;
+}
+
+.expertise-item {
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.expertise-angular {
+    background-image: url('Images/Expertise/angular.png');
+}
+.expertise-aspnet {
+    background-image: url('Images/Expertise/asp_net.png');
+}
+.expertise-net {
+    background-image: url('Images/Expertise/net_framework.png');
+}
+.expertise-xamarin {
+    background-image: url('Images/Expertise/xamarin.png');
 }
