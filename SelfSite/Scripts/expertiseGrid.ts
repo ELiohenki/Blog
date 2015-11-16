@@ -1,16 +1,19 @@
-﻿$(document).ready(function () {
-    // init Isotope
-    var $container = $('.isotope').isotope({
-        itemSelector: '.element-item',
+﻿$(document).ready(() => {
+    var $container = (<isotope.isotope>$(".expretise-grid")).isotope({
+        itemSelector: ".expertise-item",
         layoutMode: 'fitRows',
         getSortData: {
-            name: '.name',
-            symbol: '.symbol',
-            number: '.number parseInt',
-            category: '[data-category]',
-            weight: function (itemElem) {
+            name: ".name",
+            date: ".date",
+            category: "[data-category]",
+            weight(itemElem) {
                 var weight = $(itemElem).find('.weight').text();
                 return parseFloat(weight.replace(/[\(\)]/g, ''));
             }
         }
     });
+    $('#filters').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $container.isotope({ filter: filterValue });
+    });
+});

@@ -5,9 +5,13 @@
 
 @section head
 {
-    @Scripts.Render("~/Scripts/cbpAnimatedHeader.js")
-    @Scripts.Render("~/bundles/isotope")
     @Styles.Render("~/Content/mainpage.css")
+}
+
+@section scripts
+{
+    @Scripts.Render("~/Scripts/cbpAnimatedHeader.js")
+    @Scripts.Render("~/bundles/expertisegrid")
 }
 
 <header id="home" class="jumbotron">
@@ -81,20 +85,28 @@
                 <hr class="star-primary thick-light">
             </div>
         </div>
-        <div class="grid">
-            <div class="expertise-item web front-end expertise-angular">
+        <div id="filters" class="button-group">
+            <div>
+                <button class="button is-checked" data-filter="*">show all</button>
+                <button class="button" data-filter=".back-end">Back-End</button>
+                <button class="button" data-filter=".front-end">Front-End</button>
+                <button class="button" data-filter=".mobile">Mobile</button>
+            </div>
+        </div>
+        <div class="expretise-grid">
+            <div class="expertise-item web front-end expertise-angular front-end" data-category="Front-End">
                 <h5 class="name">AngularJS</h5>
                 <p class="date">04112015</p>
             </div>
-            <div class="expertise-item web back-end expertise-aspnet">
+            <div class="expertise-item web back-end expertise-aspnet back-end" data-category="Back-End">
                 <h5 class="name">ASP.NET</h5>
                 <p class="date">04112015</p>
             </div>
-            <div class="expertise-item back-end expertise-net">
+            <div class="expertise-item back-end expertise-net back-end" data-category="Back-End">
                 <h5 class="name">.NET</h5>
                 <p class="date">04112015</p>
             </div>
-            <div class="expertise-item mobile expertise-xamarin">
+            <div class="expertise-item mobile expertise-xamarin mobile" data-category="Mobile">
                 <h5 class="name">Xamarin</h5>
                 <p class="date">04112015</p>
             </div>

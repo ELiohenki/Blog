@@ -205,8 +205,6 @@
     <Content Include="Content\Images\Expertise\xamarin.png" />
     <Content Include="Content\Images\profile.jpg" />
     <Content Include="Content\mainpage.css" />
-    <Content Include="Images\net_framework.png" />
-    <Content Include="Images\profile.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -1079,10 +1077,12 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\blog\PostDirective\Post.ts" />
     <TypeScriptCompile Include="Scripts\blog\BlogController.ts" />
+    <TypeScriptCompile Include="Scripts\expertiseGrid.ts" />
     <TypeScriptCompile Include="Scripts\main.ts" />
     <TypeScriptCompile Include="Scripts\blog\tumblrService.ts" />
     <TypeScriptCompile Include="Scripts\types.ts" />
     <TypeScriptCompile Include="Scripts\typing\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\typing\isotope.d.ts" />
     <TypeScriptCompile Include="Scripts\typing\jquery.d.ts" />
   </ItemGroup>
   <PropertyGroup>

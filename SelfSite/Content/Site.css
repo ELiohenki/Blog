@@ -54,3 +54,16 @@ section {
 .expertise-xamarin {
     background-image: url('Images/Expertise/xamarin.png');
 }
+
+#filters {
+    align-content: center;
+    display: flex;
+}
+#filters div {
+    display: inline-block;
+    margin: auto;
+}
+#filters button {
+    width: 100px;
+    display: inline-block;
+}
