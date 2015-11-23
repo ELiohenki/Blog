@@ -5,11 +5,7 @@
         getSortData: {
             name: ".name",
             date: ".date",
-            category: "[data-category]",
-            weight(itemElem) {
-                var weight = $(itemElem).find('.weight').text();
-                return parseFloat(weight.replace(/[\(\)]/g, ''));
-            }
+            category: "[data-category]"
         }
     });
     $('#filters').on('click', 'button', function () {
