@@ -25,7 +25,8 @@ namespace SelfSite
 
             bundles.Add(new ScriptBundle("~/bundles/expertisegrid").Include(
                       "~/Scripts/libs/isotope/isotope.pkgd.js").Include(
-                      "~/Scripts/expertiseGrid.js"));
+                      "~/Scripts/expertiseGrid.js").Include(
+                      "~/Scripts/main.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
