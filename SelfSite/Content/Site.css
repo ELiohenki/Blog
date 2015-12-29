@@ -36,10 +36,13 @@ section {
 .expertise-item {
     width: 200px;
     height: 200px;
-    background-size: 100%;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-transform: none;
 }
 
 .expertise-angular {
@@ -54,6 +57,52 @@ section {
 .expertise-xamarin {
     background-image: url('Images/Expertise/xamarin.png');
 }
+.expertise-nodejs {
+    background-image: url('Images/Expertise/nodejs.png');
+}
+.expertise-ionic {
+    background-image: url('Images/Expertise/ionic.png');
+}
+.expertise-bootstrap {
+    background-image: url('Images/Expertise/bootstrap.png');
+}
+
+.expertise-item .name {
+    height: 20%;
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    vertical-align: middle;
+    display: flex;
+    overflow: hidden;
+}
+
+.expertise-item .name p {
+    text-align: center;
+    width: 100%;
+}
+
+.expertise-item .date {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .expertise-item .name {
+        -webkit-transition: height 0.3s ease-out 0s;
+        -moz-transition: height 0.3s ease-out 0s;
+        -o-transition: height 0.3s ease-out 0s;
+        transition: height 0.3s ease-out 0s;
+        height: 0;
+    }
+
+    .expertise-item:hover .name {
+        height: 20%;
+    }
+}
+
 
 #filters {
     align-content: center;
