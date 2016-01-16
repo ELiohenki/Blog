@@ -202,9 +202,12 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\Expertise\angular.png" />
     <Content Include="Content\Images\Expertise\asp_net.png" />
+    <Content Include="Content\Images\Expertise\bootstrap.png" />
     <Content Include="Content\Images\Expertise\ionic.png" />
+    <Content Include="Content\Images\Expertise\mongodb.png" />
     <Content Include="Content\Images\Expertise\net_framework.png" />
     <Content Include="Content\Images\Expertise\nodejs.png" />
+    <Content Include="Content\Images\Expertise\sql-server.png" />
     <Content Include="Content\Images\Expertise\xamarin.png" />
     <Content Include="Content\Images\profile.jpg" />
     <Content Include="Content\mainpage.css" />
@@ -1072,7 +1075,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\blog\PostDirective\Post.ts" />
     <TypeScriptCompile Include="Scripts\blog\BlogController.ts" />
-    <TypeScriptCompile Include="Scripts\expertiseGrid.ts" />
+    <TypeScriptCompile Include="Scripts\filterGrids.ts" />
     <TypeScriptCompile Include="Scripts\main.ts" />
     <TypeScriptCompile Include="Scripts\blog\tumblrService.ts" />
     <TypeScriptCompile Include="Scripts\types.ts" />
