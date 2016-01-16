@@ -66,6 +66,12 @@ section {
 .expertise-bootstrap {
     background-image: url('Images/Expertise/bootstrap.png');
 }
+.expertise-sqlserver {
+    background-image: url('Images/Expertise/sql-server.png');
+}
+.expertise-mongodb {
+    background-image: url('Images/Expertise/mongodb.png');
+}
 
 .expertise-item .name {
     height: 20%;
@@ -115,4 +121,43 @@ section {
 #filters button {
     width: 100px;
     display: inline-block;
+}
+
+.portfolio-item {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-transform: none;
+}
+
+.portfolio-item .name p {
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio-item .date {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .portfolio-item .name {
+        -webkit-transition: height 0.3s ease-out 0s;
+        -moz-transition: height 0.3s ease-out 0s;
+        -o-transition: height 0.3s ease-out 0s;
+        transition: height 0.3s ease-out 0s;
+        height: 0;
+    }
+
+    .portfolio-item:hover .name {
+        height: 20%;
+    }
+}
+
+.expertise-pinsol {
+    background-image: url('Images/Expertise/angular.png');
 }
