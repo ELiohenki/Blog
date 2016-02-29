@@ -197,9 +197,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\Expertise\angular.png" />
     <Content Include="Content\Images\Expertise\asp_net.png" />
     <Content Include="Content\Images\Expertise\bootstrap.png" />
@@ -209,8 +206,14 @@
     <Content Include="Content\Images\Expertise\nodejs.png" />
     <Content Include="Content\Images\Expertise\sql-server.png" />
     <Content Include="Content\Images\Expertise\xamarin.png" />
+    <Content Include="Content\Images\Portfolio\cvmanager.png" />
     <Content Include="Content\Images\profile.jpg" />
     <Content Include="Content\mainpage.css" />
+    <Content Include="Content\Styles\bootstrap-theme.css" />
+    <Content Include="Content\Styles\font-awesome.css" />
+    <Content Include="Content\Styles\font-awesome.min.css" />
+    <Content Include="Content\Styles\photoswipe-skin.css" />
+    <Content Include="Content\Styles\photoswipe.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
@@ -1019,6 +1022,8 @@
     <Content Include="Scripts\libs\modernizr\modernizr-2.6.2.js" />
     <Content Include="Scripts\libs\bootstrap\respond.js" />
     <Content Include="Scripts\libs\bootstrap\respond.min.js" />
+    <Content Include="Scripts\libs\photoswipe\photoswipe-ui.js" />
+    <Content Include="Scripts\libs\photoswipe\photoswipe.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -1078,10 +1083,12 @@
     <TypeScriptCompile Include="Scripts\filterGrids.ts" />
     <TypeScriptCompile Include="Scripts\main.ts" />
     <TypeScriptCompile Include="Scripts\blog\tumblrService.ts" />
+    <TypeScriptCompile Include="Scripts\portfolioPreview.ts" />
     <TypeScriptCompile Include="Scripts\types.ts" />
-    <TypeScriptCompile Include="Scripts\typing\angular.d.ts" />
-    <TypeScriptCompile Include="Scripts\typing\isotope.d.ts" />
-    <TypeScriptCompile Include="Scripts\typing\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\photoswipe.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\isotope.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

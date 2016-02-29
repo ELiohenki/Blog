@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yauheni Liohenki - @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/libs")
     @RenderSection("head")
 </head>
 <body id="page-top" ng-app="selfsite">
@@ -29,8 +29,6 @@
         <p>&copy; @DateTime.Now.Year - Yauheni Liohenki Site</p>
     </footer>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>
