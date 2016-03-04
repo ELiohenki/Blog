@@ -34,8 +34,7 @@ section {
 }
 
 .expertise-item {
-    width: 200px;
-    height: 200px;
+    &:extend(.col-xs-6-square, .col-sm-4, .col-sm-4-square, .col-md-2, .col-md-2-square);
     background-size: 75%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -43,6 +42,20 @@ section {
     position: relative;
     overflow: hidden;
     text-transform: none;
+}
+
+.col-xs-6-square {
+    padding-bottom: 50%;
+}
+@media (min-width: 768px) {
+    .col-sm-4-square {
+        padding-bottom: 33.33333%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-2-square {
+        padding-bottom: 16.66667%;
+    }
 }
 
 .expertise-angular {
