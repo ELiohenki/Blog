@@ -51,6 +51,9 @@ declare module PhotoSwipe {
          * Internal property added by PhotoSwipe.
          */
         initialPosition?: any;
+
+        html: string;
+
     }
 
     /**

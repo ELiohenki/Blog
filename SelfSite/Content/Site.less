@@ -34,8 +34,7 @@ section {
 }
 
 .expertise-item {
-    width: 200px;
-    height: 200px;
+    &:extend(.col-md-2-square, .col-sm-4-square, .col-xs-6-square);
     background-size: 75%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -43,6 +42,20 @@ section {
     position: relative;
     overflow: hidden;
     text-transform: none;
+}
+
+.col-xs-6-square {
+    padding-bottom: 50%;
+}
+@media (min-width: 768px) {
+    .col-sm-4-square {
+        padding-bottom: 33.33333%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-2-square {
+        padding-bottom: 16.66667%;
+    }
 }
 
 .expertise-angular {
@@ -109,7 +122,6 @@ section {
     }
 }
 
-
 #filters {
     align-content: center;
     display: flex;
@@ -124,6 +136,7 @@ section {
 }
 
 .portfolio-item {
+    &:extend(.col-md-2-square, .col-sm-4-square, .col-xs-6-square);
     width: 200px;
     height: 200px;
     background-size: contain;
@@ -177,4 +190,9 @@ section {
 
 .portfolio-cvmanager{
     background-image: url('Images/Portfolio/cvmanager.png');
+}
+
+.popup-content
+{
+     display: none;
 }
