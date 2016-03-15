@@ -1,8 +1,9 @@
 $(document).ready(function () {
-    $(".expertise-mongodb").click(function () {
+    $("[class^='portfolio-'],div[class*=' portfolio-']").click(function () {
         var pswpElement = document.querySelectorAll('.pswp')[0];
         var items = [
             {
+                html: '<div><h1>Any HTML <a href="http://example.com">content</a></h1></div>',
                 src: 'Content/Images/Expertise/mongodb.png',
                 w: 600,
                 h: 400

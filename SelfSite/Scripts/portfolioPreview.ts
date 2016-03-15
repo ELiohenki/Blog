@@ -1,11 +1,9 @@
 ﻿$(document).ready(function () {
-    $(".expertise-mongodb").click(() => {
+    $("[class^='portfolio-'],div[class*=' portfolio-']").click(() => {
         var pswpElement = document.querySelectorAll('.pswp')[0];
-        var items = [
+        var items = <PhotoSwipe.Item[]>[
             {
-                src: 'Content/Images/Expertise/mongodb.png',
-                w: 600,
-                h: 400
+                html: '<div><h1>Any HTML <a href="http://example.com">content</a></h1></div>'
             }
         ];
 

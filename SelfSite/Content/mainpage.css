@@ -58,12 +58,12 @@ hr.star-light:after, hr.star-primary:after {
 }
 
 hr.star-primary:after {
-    color: #348B04;
+    color: #3e648d;
     background-color: #fff;
 }
 
 hr.star-primary {
-    border-color: #348B04;
+    border-color: #3e648d;
 }
 
 hr.thick-light {
@@ -87,13 +87,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-light a.sr-buttonicon:hover {
-    background: #348B04;
-    color: #348B04;
+    background: #3e648d;
+    color: #3e648d;
 }
 
 .text-light a.sr-buttonicon {
-    border-color: #348B04;
-    color: #348B04;
+    border-color: #3e648d;
+    color: #3e648d;
 }
 
 a.sr-button {
@@ -109,13 +109,13 @@ a.sr-button {
     cursor: pointer;
     background: #ffffff;
     text-decoration: none;
-    color: #348B04;
+    color: #3e648d;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     border-radius: 999px;
     -moz-border-radius: 999px;
     -webkit-border-radius: 999px;
     -o-border-radius: 999px;
-    border: 2px solid #348B04;
+    border: 2px solid #3e648d;
     -webkit-transform: scale(1);
     transform: scale(1);
 }
@@ -123,10 +123,10 @@ a.sr-button {
     a.sr-button:hover {
         -webkit-transform: scale(1.15);
         transform: scale(1.15);
-        background: #348B04;
+        background: #3e648d;
         text-decoration: none;
         color: #ffffff;
-        border: 2px solid #348B04;
+        border: 2px solid #3e648d;
     }
 
 .hire-me-button {

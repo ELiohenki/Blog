@@ -210,6 +210,8 @@
     <Content Include="Content\Images\Expertise\nodejs.png" />
     <Content Include="Content\Images\Expertise\sql-server.png" />
     <Content Include="Content\Images\Expertise\xamarin.png" />
+    <Content Include="Content\Images\photoswipe-skin.png" />
+    <Content Include="Content\Images\photoswipe-skin.svg" />
     <Content Include="Content\Images\Portfolio\cvmanager.png" />
     <Content Include="Content\Images\profile.jpg" />
     <Content Include="Content\mainpage.css" />
@@ -1073,6 +1075,7 @@
     <Content Include="Views\Shared\DisplayTemplates\MetaRobotsHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
+    <Content Include="Views\Shared\PhotoSwipePopup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
