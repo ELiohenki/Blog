@@ -47,11 +47,13 @@ section {
 .col-xs-6-square {
     padding-bottom: 50%;
 }
+
 @media (min-width: 768px) {
     .col-sm-4-square {
         padding-bottom: 33.33333%;
     }
 }
+
 @media (min-width: 992px) {
     .col-md-2-square {
         padding-bottom: 16.66667%;
@@ -61,27 +63,35 @@ section {
 .expertise-angular {
     background-image: url('Images/Expertise/angular.png');
 }
+
 .expertise-aspnet {
     background-image: url('Images/Expertise/asp_net.png');
 }
+
 .expertise-net {
     background-image: url('Images/Expertise/net_framework.png');
 }
+
 .expertise-xamarin {
     background-image: url('Images/Expertise/xamarin.png');
 }
+
 .expertise-nodejs {
     background-image: url('Images/Expertise/nodejs.png');
 }
+
 .expertise-ionic {
     background-image: url('Images/Expertise/ionic.png');
 }
+
 .expertise-bootstrap {
     background-image: url('Images/Expertise/bootstrap.png');
 }
+
 .expertise-sqlserver {
     background-image: url('Images/Expertise/sql-server.png');
 }
+
 .expertise-mongodb {
     background-image: url('Images/Expertise/mongodb.png');
 }
@@ -97,6 +107,7 @@ section {
     vertical-align: middle;
     display: flex;
     overflow: hidden;
+    left: 0px;
 }
 
 .expertise-item .name p {
@@ -126,10 +137,12 @@ section {
     align-content: center;
     display: flex;
 }
+
 #filters div {
     display: inline-block;
     margin: auto;
 }
+
 #filters button {
     width: 100px;
     display: inline-block;
@@ -146,29 +159,34 @@ section {
     position: relative;
     overflow: hidden;
     text-transform: none;
+    cursor: pointer;
+
+    .name {
+        height: 20%;
+        width: 100%;
+        background: black;
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        bottom: 0;
+        vertical-align: middle;
+        display: flex;
+        overflow: hidden;
+        left: 0px;
+
+        p {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .date {
+        display: none;
+    }
 }
 
-.portfolio-item .name {
-    height: 20%;
-    width: 100%;
-    background: black;
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    bottom: 0;
-    vertical-align: middle;
-    display: flex;
-    overflow: hidden;
-}
 
-.portfolio-item .name p {
-    text-align: center;
-    width: 100%;
-}
 
-.portfolio-item .date {
-    display: none;
-}
 
 @media (min-width: 992px) {
     .portfolio-item .name {
@@ -188,11 +206,18 @@ section {
     background-image: url('Images/Expertise/angular.png');
 }
 
-.portfolio-cvmanager{
+.portfolio-cvmanager {
     background-image: url('Images/Portfolio/cvmanager.png');
 }
 
-.popup-content
-{
-     display: none;
+.popup-container {
+    display: none;
+}
+
+.popup-content {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
