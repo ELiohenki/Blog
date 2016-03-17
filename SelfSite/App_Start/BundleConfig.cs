@@ -3,6 +3,8 @@ using System.Web.Optimization;
 
 namespace SelfSite
 {
+    using System;
+
     public class BundleConfig
     {
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
@@ -33,7 +35,7 @@ namespace SelfSite
                       "~/Content/Styles/bootstrap-theme.css",
                       "~/Content/Styles/font-awesome.css",
                       "~/Content/Styles/photoswipe.css",
-                      "~/Content/Styles/photoswipe-skin.css"));
+                      "~/Content/Styles/photoswipe-skin.css?q=" + DateTime.Now.Ticks));
 
             bundles.Add(new ScriptBundle("~/bundles/blogModule").Include(
                       "~/Scripts/libs/Angular/angular.js",
