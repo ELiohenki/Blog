@@ -30,7 +30,6 @@ namespace SelfSite
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/Styles/bootstrap.css",
-                      "~/Content/site.less",
                       "~/Content/Styles/bootstrap-theme.css",
                       "~/Content/Styles/font-awesome.css",
                       "~/Content/Styles/photoswipe.css",

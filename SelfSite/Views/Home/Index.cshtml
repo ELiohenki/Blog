@@ -5,7 +5,8 @@
 
 @section head
 {
-    @Styles.Render("~/Content/mainpage.css")
+    @Styles.Render("~/Content/mainpage.css?q=" + DateTime.Now.Ticks)
+    @Styles.Render("~/Content/site.less")
 }
 
 @section scripts
