@@ -1,9 +1,10 @@
 ﻿$(document).ready(function () {
-    $("[class^='portfolio-'],div[class*=' portfolio-']").click(() => {
+    $(".portfolio-item").click(function () {
         var pswpElement = document.querySelectorAll('.pswp')[0];
+        var html = $(this).find(".popup-container").html();
         var items = <PhotoSwipe.Item[]>[
             {
-                html: '<div><h1>Any HTML <a href="http://example.com">content</a></h1></div>'
+                html: html
             }
         ];
 
