@@ -35,7 +35,7 @@ namespace SelfSite
                       "~/Content/Styles/bootstrap-theme.css",
                       "~/Content/Styles/font-awesome.css",
                       "~/Content/Styles/photoswipe.css",
-                      "~/Content/Styles/photoswipe-skin.css?q=" + DateTime.Now.Ticks));
+                      "~/Content/Styles/photoswipe-skin.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/blogModule").Include(
                       "~/Scripts/libs/Angular/angular.js",
