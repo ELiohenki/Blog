@@ -3,6 +3,8 @@ using System.Web.Optimization;
 
 namespace SelfSite
 {
+    using System;
+
     public class BundleConfig
     {
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
@@ -30,7 +32,6 @@ namespace SelfSite
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/Styles/bootstrap.css",
-                      "~/Content/site.less",
                       "~/Content/Styles/bootstrap-theme.css",
                       "~/Content/Styles/font-awesome.css",
                       "~/Content/Styles/photoswipe.css",
