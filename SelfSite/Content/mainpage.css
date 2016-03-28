@@ -146,3 +146,12 @@ a.sr-button {
   border: 0px !important;
   border: 0px !important;
 }
+
+.popup-content img {
+    width: 500px;
+}
+
+.popup-content p {
+    margin: 10px;
+    color: white;
+}
