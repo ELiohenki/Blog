@@ -15,5 +15,6 @@
         });
     }
     createFilter(".expretise-grid", ".expertise-item", "#filters");
-    createFilter(".portfolio-grid", ".portfolio-item", "#portfolio_filters");
+    createFilter(".portfolio-grid", ".portfolio-item", "#portfolio_filters_by_area");
+    createFilter(".portfolio-grid", ".portfolio-item", "#portfolio_filters_by_technology");
 });

@@ -172,6 +172,9 @@
     <Content Include="Content\Images\photoswipe-skin.png" />
     <Content Include="Content\Images\photoswipe-skin.svg" />
     <Content Include="Content\Images\Portfolio\cvmanager.png" />
+    <Content Include="Content\Images\Portfolio\pinsol.png" />
+    <Content Include="Content\Images\Portfolio\vm1.png" />
+    <Content Include="Content\Images\Portfolio\vm2.png" />
     <Content Include="Content\Images\profile.jpg" />
     <Content Include="Content\mainpage.css" />
     <Content Include="Content\Site.less" />
