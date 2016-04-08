@@ -11,6 +11,7 @@
             -webkit-transition: all .3s;
             -moz-transition: all .3s;
             transition: all .3s;
+            padding-right: 0px;
         }
 
         .navbar-fixed-top.navbar-shrink {
@@ -22,11 +23,13 @@
             }
 }
 
+header .container {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
 @media(min-width:768px) {
-    header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
-    }
+
 
     header .intro-text .name {
         font-size: 4.75em;
@@ -34,6 +37,10 @@
 
     header .intro-text .skills {
         font-size: 1.75em;
+    }
+
+    #see-portfolio {
+        padding-top: 150px;
     }
 }
 
@@ -133,25 +140,12 @@ a.sr-button {
     text-align: center;
 }
 
-#see-portfolio {
-    padding-top: 150px;
+.services-list .list-group-item {
+    border: 0px !important;
+    border: 0px !important;
 }
 
 .services-list .list-group-item {
-  border: 0px !important;
-  border: 0px !important;
-}
-
-.services-list .list-group-item {
-  border: 0px !important;
-  border: 0px !important;
-}
-
-.popup-content img {
-    width: 500px;
-}
-
-.popup-content p {
-    margin: 10px;
-    color: white;
+    border: 0px !important;
+    border: 0px !important;
 }
