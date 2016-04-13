@@ -169,6 +169,24 @@
             </div>
         </div>
         <div class="portfolio-grid">
+            <div class="portfolio-item col-xs-6 col-sm-4 col-md-2 web back-end net mobile xamarin portfolio-gbcoach">
+                <div class="name">
+                    <p>GitHubCoach</p>
+                </div>
+                <p class="date">04112015</p>
+                <div class="popup-container">
+                    <div class="popup-content">
+                        <img src="~/Content/Images/Portfolio/gbcoach1.png" />
+                        <p>Application for monitoring GitHub activities. Main purpose - motivate user to make everyday commits to github.com</p>
+                    </div>
+                </div>
+                <div class="popup-container">
+                    <div class="popup-content">
+                        <img src="~/Content/Images/Portfolio/gbcoach2.png" />
+                        <p>Application for monitoring GitHub activities. Main purpose - motivate user to make everyday commits to github.com</p>
+                    </div>
+                </div>
+            </div>
             <div class="portfolio-item col-xs-6 col-sm-4 col-md-2 desktop net portfolio-cts">
                 <div class="name">
                     <p>Typing Station</p>
@@ -176,7 +194,7 @@
                 <p class="date">04112015</p>
                 <div class="popup-container">
                     <div class="popup-content">
-                        <img src="~/Content/Images/Portfolio/cts.png" />
+                        <img src="~/Content/Images/Portfolio/cts.png"/>
                         <p>Desktop application for document recognition by hand.</p>
                     </div>
                 </div>
@@ -200,11 +218,13 @@
                 </div>
             </div>
             <div class="portfolio-item col-xs-6 col-sm-4 col-md-2 desktop net portfolio-apitester">
-                <div class="name"><p>Api tester</p></div>
+                <div class="name">
+                    <p>Api tester</p>
+                </div>
                 <p class="date">04112015</p>
                 <div class="popup-container">
                     <div class="popup-content">
-                        <img src="~/Content/Images/Portfolio/apitester.png" />
+                        <img src="~/Content/Images/Portfolio/apitester.png"/>
                         <p>Application used for half-automated testing by testers/users.</p>
                     </div>
                 </div>
@@ -257,8 +277,13 @@
 
 <section id="contact">
     <div class="container">
-        <p>yauheni@liohenki.com</p>
-        <p>legenkiyes@gmail.com</p>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Contacts</h2>
+                <hr class="star-primary thick-light">
+            </div>
+        </div>
+        @Html.Partial("Contact")
     </div>
 </section>
 

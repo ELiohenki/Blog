@@ -176,6 +176,8 @@
     <Content Include="Content\Images\Portfolio\correct2.png" />
     <Content Include="Content\Images\Portfolio\cts.png" />
     <Content Include="Content\Images\Portfolio\cvmanager.png" />
+    <Content Include="Content\Images\Portfolio\gbcoach1.png" />
+    <Content Include="Content\Images\Portfolio\gbcoach2.png" />
     <Content Include="Content\Images\Portfolio\pinsol.png" />
     <Content Include="Content\Images\Portfolio\vm1.png" />
     <Content Include="Content\Images\Portfolio\vm2.png" />
