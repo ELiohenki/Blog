@@ -28,7 +28,8 @@ namespace SelfSite
             bundles.Add(new ScriptBundle("~/bundles/expertisegrid").Include(
                       ).Include("~/Scripts/filterGrids.js").Include(
                       "~/Scripts/main.js",
-                      "~/Scripts/portfolioPreview.js"));
+                      "~/Scripts/portfolioPreview.js",
+                      "~/Scripts/sendEmail.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/Styles/bootstrap.css",

@@ -2,12 +2,20 @@
     ViewBag.Title = "Contact";
 }
 
+<form action="~/Email/Send" method="POST">
+    <h2>Send me message</h2>
+    <span>How can i call you?</span><input type="text" name="from" id="fromEmail">
+    <span>Subject</span><input type="text" name="subject" id="subjectEmail" value="Nice to meet you">
+    <span>Message</span><textarea rows="4" cols="50" name="body" id="bodyEmail"></textarea>
+    <button type="submit" onclick="SendEmail(); return false;">Submit</button>
+</form>
+
 <address>
     Belarus<br />
     Minsk<br />
 </address>
 
 <address>
-    <strong>Support:</strong> <a href="mailto:yauheni@liohenki.com">yauheni@liohenki.com</a><br/>
+    <strong>Support:</strong> <a href="mailto:yauheni@liohenki.com">yauheni@liohenki.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:legenkiyes@gmail.com">legenkiyes@gmail.com</a>
 </address>
