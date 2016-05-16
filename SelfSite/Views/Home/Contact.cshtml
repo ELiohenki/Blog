@@ -3,11 +3,19 @@
 }
 
 <form action="~/Email/Send" method="POST">
-    <h2>Send me message</h2>
-    <span>How can i call you?</span><input type="text" name="from" id="fromEmail">
-    <span>Subject</span><input type="text" name="subject" id="subjectEmail" value="Nice to meet you">
-    <span>Message</span><textarea rows="4" cols="50" name="body" id="bodyEmail"></textarea>
-    <button type="submit" onclick="SendEmail(); return false;">Submit</button>
+    <div class="contacts-message">
+        <h3>Leave message</h3>
+        <div class="row">
+            <span>Name</span><input type="text" name="from" id="fromEmail">
+        </div>
+        <div class="row">
+            <span>Subject</span><input type="text" name="subject" id="subjectEmail">
+        </div>
+        <div class="row">
+            <span>Message</span><textarea rows="4" cols="50" name="body" id="bodyEmail"></textarea>
+        </div>
+        <button type="submit" id="sendEmailButton" onclick="SendEmail(); return false;">Submit</button>
+    </div>
 </form>
 
 <address>

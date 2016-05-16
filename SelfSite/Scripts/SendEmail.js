@@ -9,6 +9,6 @@
             $("#fromEmail").val("");
             $("#subjectEmail").val("");
             $("#bodyEmail").val("");
-            alert("Sent");
+            $("#bodyEmail").notify("Sent", "success");
         });
 }
