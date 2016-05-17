@@ -271,6 +271,8 @@
     <Content Include="Scripts\libs\modernizr\modernizr-2.6.2.js" />
     <Content Include="Scripts\libs\bootstrap\respond.js" />
     <Content Include="Scripts\libs\bootstrap\respond.min.js" />
+    <Content Include="Scripts\libs\notifyjs\notify.js" />
+    <Content Include="Scripts\libs\notifyjs\notify.min.js" />
     <Content Include="Scripts\libs\photoswipe\photoswipe-ui.js" />
     <Content Include="Scripts\libs\photoswipe\photoswipe.js" />
     <Content Include="Scripts\sendEmail.js" />
