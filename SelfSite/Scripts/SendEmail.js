@@ -1,4 +1,6 @@
-﻿SendEmail = function () {
+﻿$("#bodyEmail").autosize();
+
+SendEmail = function () {
 
     if (!$("#bodyEmail").val()) {
         $("#bodyEmail").notify("Necessary field", "error");
@@ -18,7 +20,6 @@
             $("#fromEmail").val("");
             $("#subjectEmail").val("");
             $("#bodyEmail").val("");
-            $("#bodyEmail").notify("Sent", "success");
             $("#sendEmailButton").prop("disabled", false);
 
             setTimeout(function () {

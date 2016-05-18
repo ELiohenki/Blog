@@ -6,13 +6,13 @@
     <div class="contacts-message">
         <h3>Leave message</h3>
         <div class="row">
-            <span>How can I call You?</span><input type="text" name="from" id="fromEmail">
+            <span>How can I call You?</span><input type="text" name="from" maxlength="150" id="fromEmail">
         </div>
         <div class="row">
-            <span>Contacts</span><input type="text" name="subject" id="subjectEmail">
+            <span>Contacts</span><input type="text" name="subject" maxlength="150" id="subjectEmail">
         </div>
         <div class="row">
-            <span>Message</span><textarea rows="4" cols="50" name="body" id="bodyEmail"></textarea>
+            <span>Message</span><textarea rows="4" cols="50" name="body" maxlength="5000" id="bodyEmail"></textarea>
         </div>
         <div class="email-button-container">
             <button type="submit" id="sendEmailButton" class="sendEmail" onclick="SendEmail(); return false;">
@@ -21,7 +21,7 @@
                 </div>
                 <div class="emailLoader"></div>
                 <div class="emailDone">
-                    <p>SUCCESS</p> <i class="fa fa-check-circle"></i>
+                    <p>SUCCESS</p>
                 </div>
             </button>
         </div>

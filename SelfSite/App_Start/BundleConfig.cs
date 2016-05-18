@@ -24,7 +24,8 @@ namespace SelfSite
                       "~/Scripts/libs/jquery/jquery.validate*",
                       "~/Scripts/libs/photoswipe/photoswipe.js",
                       "~/Scripts/libs/photoswipe/photoswipe-ui.js",
-                      "~/Scripts/libs/notifyjs/notify.js"));
+                      "~/Scripts/libs/notifyjs/notify.js",
+                      "~/Scripts/libs/autosize/jquery.autosize.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/expertisegrid").Include(
                       ).Include("~/Scripts/filterGrids.js").Include(
@@ -46,3 +47,4 @@ namespace SelfSite
         }
     }
 }
+

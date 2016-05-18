@@ -25,6 +25,8 @@ namespace SelfSite.Controllers
                     var fromAddress = new MailAddress(smtpSettings.UserName, from);
                     var toAddress = new MailAddress(smtpSettings.To, "Sir Yauheni Liohenki");
                     var fromPassword = smtpSettings.Password;
+                    context.Emails.InsertOnSubmit(new Email() { From = from ?? "", Subject = subject ?? "", Body = body });
+                    context.SubmitChanges();
 
                     var smtp = new SmtpClient
                                    {

@@ -30,6 +30,9 @@ namespace SelfSite.Model
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
+    partial void InsertEmail(Email instance);
+    partial void UpdateEmail(Email instance);
+    partial void DeleteEmail(Email instance);
     #endregion
 		
 		public DBDataContext() : 
@@ -67,6 +70,14 @@ namespace SelfSite.Model
 			get
 			{
 				return this.GetTable<SmtpSetting>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Email> Emails
+		{
+			get
+			{
+				return this.GetTable<Email>();
 			}
 		}
 	}
@@ -130,6 +141,164 @@ namespace SelfSite.Model
 				{
 					this._To = value;
 				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Email")]
+	public partial class Email : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _EmailId;
+		
+		private string _From;
+		
+		private string _Subject;
+		
+		private string _Body;
+		
+		private System.DateTime _CreateDate;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnEmailIdChanging(System.Guid value);
+    partial void OnEmailIdChanged();
+    partial void OnFromChanging(string value);
+    partial void OnFromChanged();
+    partial void OnSubjectChanging(string value);
+    partial void OnSubjectChanged();
+    partial void OnBodyChanging(string value);
+    partial void OnBodyChanged();
+    partial void OnCreateDateChanging(System.DateTime value);
+    partial void OnCreateDateChanged();
+    #endregion
+		
+		public Email()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmailId", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true, IsDbGenerated=true)]
+		public System.Guid EmailId
+		{
+			get
+			{
+				return this._EmailId;
+			}
+			set
+			{
+				if ((this._EmailId != value))
+				{
+					this.OnEmailIdChanging(value);
+					this.SendPropertyChanging();
+					this._EmailId = value;
+					this.SendPropertyChanged("EmailId");
+					this.OnEmailIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[From]", Storage="_From", DbType="NVarChar(150) NOT NULL", CanBeNull=false)]
+		public string From
+		{
+			get
+			{
+				return this._From;
+			}
+			set
+			{
+				if ((this._From != value))
+				{
+					this.OnFromChanging(value);
+					this.SendPropertyChanging();
+					this._From = value;
+					this.SendPropertyChanged("From");
+					this.OnFromChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Subject", DbType="NVarChar(150) NOT NULL", CanBeNull=false)]
+		public string Subject
+		{
+			get
+			{
+				return this._Subject;
+			}
+			set
+			{
+				if ((this._Subject != value))
+				{
+					this.OnSubjectChanging(value);
+					this.SendPropertyChanging();
+					this._Subject = value;
+					this.SendPropertyChanged("Subject");
+					this.OnSubjectChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Body", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string Body
+		{
+			get
+			{
+				return this._Body;
+			}
+			set
+			{
+				if ((this._Body != value))
+				{
+					this.OnBodyChanging(value);
+					this.SendPropertyChanging();
+					this._Body = value;
+					this.SendPropertyChanged("Body");
+					this.OnBodyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreateDate", DbType="DateTime NOT NULL", IsDbGenerated=true)]
+		public System.DateTime CreateDate
+		{
+			get
+			{
+				return this._CreateDate;
+			}
+			set
+			{
+				if ((this._CreateDate != value))
+				{
+					this.OnCreateDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreateDate = value;
+					this.SendPropertyChanged("CreateDate");
+					this.OnCreateDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
