@@ -16,6 +16,12 @@ namespace SelfSite
             );
 
             routes.MapRoute(
+                name: "GitHubCoach",
+                url: "GitHubCoach",
+                defaults: new { controller = "Projects", action = "GitHubCoach", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Blog",
                 url: "blog",
                 defaults: new { controller = "Home", action = "blog" }

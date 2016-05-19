@@ -8,6 +8,9 @@
     <mvcSiteMapNode title="Expertise" url="#expertise" />
     <mvcSiteMapNode title="Portfolio" url="#portfolio" />
     <mvcSiteMapNode title="Contact" url="#contact" />
+    <mvcSiteMapNode title="Projects" url="#">
+      <mvcSiteMapNode title="GitHubCoach" controller="Projects" action="GitHubCoach" />
+    </mvcSiteMapNode>
     <mvcSiteMapNode title="Blog" controller="Blog" action="Index"/>
   </mvcSiteMapNode>
 </mvcSiteMap>

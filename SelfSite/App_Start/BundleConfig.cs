@@ -27,9 +27,10 @@ namespace SelfSite
                       "~/Scripts/libs/notifyjs/notify.js",
                       "~/Scripts/libs/autosize/jquery.autosize.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/expertisegrid").Include(
+            bundles.Add(new ScriptBundle("~/bundles/mainpage").Include(
                       ).Include("~/Scripts/filterGrids.js").Include(
                       "~/Scripts/main.js",
+                      "~/Scripts/cbpAnimatedHeader.js",
                       "~/Scripts/portfolioPreview.js",
                       "~/Scripts/sendEmail.js"));
 
