@@ -8,5 +8,11 @@
         <elementListCompartment Id="c123866d-b427-4822-b48a-57d0dbb1e73e" absoluteBounds="1.2649999999999997, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="c238e527-83ca-43f4-886b-3af886f166d6" absoluteBounds="3.875, 1.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DBDataContext/Email" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c59c2453-c184-4d52-bc28-2880a170ac32" absoluteBounds="3.8899999999999997, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

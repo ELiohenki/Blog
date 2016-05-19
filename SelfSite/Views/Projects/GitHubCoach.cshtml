@@ -1,0 +1,28 @@
+﻿@using System.Web.UI.WebControls
+@{
+    ViewBag.Title = "GitHubCoach";
+}
+
+@section head
+{
+    @Styles.Render("~/Content/mainpage.css?q=" + DateTime.Now.Ticks)
+    @Styles.Render("~/Content/site.less")
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/mainpage")
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GitHubCoach</title>
+</head>
+<body>
+    <div> 
+    </div>
+</body>
+</html>

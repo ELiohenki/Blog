@@ -21,11 +21,12 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.6</TypeScriptToolsVersion>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
     <NuGetPackageImportStamp>d82dc25f</NuGetPackageImportStamp>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -160,6 +161,7 @@
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -205,6 +207,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\goad.js" />
+    <Content Include="Scripts\libs\autosize\jquery.autosize.js" />
+    <Content Include="Scripts\libs\autosize\jquery.autosize.min.js" />
     <Content Include="Scripts\libs\bootstrap\bootstrap.js" />
     <Content Include="Scripts\libs\bootstrap\bootstrap.min.js" />
     <Content Include="Scripts\libs\angular\angular-animate.js" />
@@ -259,6 +263,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\smartasp.net.pubxml" />
+    <None Include="Properties\PublishProfiles\smarteraspnet.pubxml" />
     <None Include="Scripts\libs\jquery\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\libs\isotope\isotope.pkgd.js" />
     <Content Include="Scripts\libs\jquery\jquery-1.10.2.js" />
@@ -306,6 +311,7 @@
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
     <Content Include="Views\Shared\PhotoSwipePopup.cshtml" />
+    <Content Include="Views\Projects\GitHubCoach.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
