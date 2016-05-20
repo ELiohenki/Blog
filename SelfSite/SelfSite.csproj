@@ -184,6 +184,8 @@
     <Content Include="Content\Images\Expertise\nodejs.png" />
     <Content Include="Content\Images\Expertise\sql-server.png" />
     <Content Include="Content\Images\Expertise\xamarin.png" />
+    <Content Include="Content\Images\github-fork.png" />
+    <Content Include="Content\Images\little-github.svg" />
     <Content Include="Content\Images\photoswipe-skin.png" />
     <Content Include="Content\Images\photoswipe-skin.svg" />
     <Content Include="Content\Images\Portfolio\apitester.png" />
@@ -197,8 +199,10 @@
     <Content Include="Content\Images\Portfolio\vm1.png" />
     <Content Include="Content\Images\Portfolio\vm2.png" />
     <Content Include="Content\Images\profile.jpg" />
-    <Content Include="Content\mainpage.css" />
-    <Content Include="Content\Site.less" />
+    <Content Include="Content\Images\Projects\GitHubCoach\screen1.png" />
+    <Content Include="Content\Images\Projects\GitHubCoach\screen2.png" />
+    <Content Include="Content\Images\Projects\GitHubCoach\screen3.png" />
+    <Content Include="Content\Mainpage.less" />
     <Content Include="Content\Styles\bootstrap-theme.css" />
     <Content Include="Content\Styles\font-awesome.css" />
     <Content Include="Content\Styles\font-awesome.min.css" />
@@ -206,6 +210,7 @@
     <Content Include="Content\Styles\photoswipe.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\expertiseGrid.js" />
     <Content Include="Scripts\goad.js" />
     <Content Include="Scripts\libs\autosize\jquery.autosize.js" />
     <Content Include="Scripts\libs\autosize\jquery.autosize.min.js" />
@@ -249,7 +254,9 @@
     <Content Include="Scripts\libs\angular\angular-aria.min.js.map" />
     <Content Include="Scripts\libs\angular\angular-animate.min.js.map" />
     <Content Include="Scripts\libs\angular\angular.min.js.map" />
-    <Content Include="Mvc.sitemap" />
+    <Content Include="Mvc.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.woff" />
@@ -259,6 +266,8 @@
       <LastGenOutput>DB.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Content\Projects.less" />
+    <Content Include="Content\Core.less" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -312,6 +321,7 @@
     <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
     <Content Include="Views\Shared\PhotoSwipePopup.cshtml" />
     <Content Include="Views\Projects\GitHubCoach.cshtml" />
+    <Content Include="Views\Projects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

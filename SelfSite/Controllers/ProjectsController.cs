@@ -8,6 +8,10 @@ namespace SelfSite.Controllers
 {
     public class ProjectsController : Controller
     {
+        public ActionResult Index()
+        {
+            return this.View();
+        }
         public ActionResult GitHubCoach()
         {
             return this.View();

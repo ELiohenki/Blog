@@ -6,7 +6,9 @@
     <title>Yauheni Liohenki - @ViewBag.Title</title>
     @Scripts.Render("~/Scripts/goad.js")
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Core.less?q=" + DateTime.Now.Ticks)
     @Scripts.Render("~/bundles/libs")
+    @Scripts.Render("~/Scripts/cbpAnimatedHeader.js")
     @RenderSection("head")
 </head>
 <body id="page-top" ng-app="selfsite">

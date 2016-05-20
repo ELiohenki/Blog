@@ -5,14 +5,12 @@
 
 @section head
 {
-    @Styles.Render("~/Content/mainpage.css?q=" + DateTime.Now.Ticks)
-    @Styles.Render("~/Content/site.less")
+    @Styles.Render("~/Content/Mainpage.less")
 }
 
 @section scripts
 {
-    @Scripts.Render("~/Scripts/cbpAnimatedHeader.js")
-    @Scripts.Render("~/bundles/expertisegrid")
+    @Scripts.Render("~/bundles/mainpage")
 }
 
 <header id="home" class="jumbotron">
