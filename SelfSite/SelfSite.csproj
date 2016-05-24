@@ -199,9 +199,9 @@
     <Content Include="Content\Images\Portfolio\vm1.png" />
     <Content Include="Content\Images\Portfolio\vm2.png" />
     <Content Include="Content\Images\profile.jpg" />
-    <Content Include="Content\Images\Projects\GitHubCoach\screen1.png" />
-    <Content Include="Content\Images\Projects\GitHubCoach\screen2.png" />
-    <Content Include="Content\Images\Projects\GitHubCoach\screen3.png" />
+    <Content Include="Content\Images\Projects\GitHubCommitNotifier\screen1.png" />
+    <Content Include="Content\Images\Projects\GitHubCommitNotifier\screen2.png" />
+    <Content Include="Content\Images\Projects\GitHubCommitNotifier\screen3.png" />
     <Content Include="Content\Mainpage.less" />
     <Content Include="Content\Styles\bootstrap-theme.css" />
     <Content Include="Content\Styles\font-awesome.css" />
@@ -320,7 +320,7 @@
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
     <Content Include="Views\Shared\PhotoSwipePopup.cshtml" />
-    <Content Include="Views\Projects\GitHubCoach.cshtml" />
+    <Content Include="Views\Projects\GitHubCommitNotifier.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
