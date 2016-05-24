@@ -12,7 +12,7 @@ namespace SelfSite.Controllers
         {
             return this.View();
         }
-        public ActionResult GitHubCoach()
+        public ActionResult GitHubCommitNotifier()
         {
             return this.View();
         }
