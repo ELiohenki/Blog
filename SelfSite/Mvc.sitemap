@@ -9,7 +9,7 @@
     <mvcSiteMapNode title="Portfolio" url="#portfolio" />
     <mvcSiteMapNode title="Contact" url="#contact" />
     <mvcSiteMapNode title="References" url="Projects" action="Index">
-      <mvcSiteMapNode title="GitHub Commit Notifier" controller="Projects" action="GitHubCommitNotifier" />
+      <mvcSiteMapNode title="GitHub Contribute Notifier" controller="Projects" action="GitHubContributeNotifier" />
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Blog" controller="Blog" action="Index"/>
   </mvcSiteMapNode>
