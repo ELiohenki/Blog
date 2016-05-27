@@ -320,7 +320,7 @@
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
     <Content Include="Views\Shared\PhotoSwipePopup.cshtml" />
-    <Content Include="Views\Projects\GitHubCommitNotifier.cshtml" />
+    <Content Include="Views\Projects\GitHubContributeNotifier.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
