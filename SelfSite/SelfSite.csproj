@@ -199,9 +199,9 @@
     <Content Include="Content\Images\Portfolio\vm1.png" />
     <Content Include="Content\Images\Portfolio\vm2.png" />
     <Content Include="Content\Images\profile.jpg" />
-    <Content Include="Content\Images\Projects\GitHubCommitNotifier\screen1.png" />
-    <Content Include="Content\Images\Projects\GitHubCommitNotifier\screen2.png" />
-    <Content Include="Content\Images\Projects\GitHubCommitNotifier\screen3.png" />
+    <Content Include="Content\Images\Projects\GitHubContributeNotifier\screen1.png" />
+    <Content Include="Content\Images\Projects\GitHubContributeNotifier\screen2.png" />
+    <Content Include="Content\Images\Projects\GitHubContributeNotifier\screen3.png" />
     <Content Include="Content\Mainpage.less" />
     <Content Include="Content\Styles\bootstrap-theme.css" />
     <Content Include="Content\Styles\font-awesome.css" />
