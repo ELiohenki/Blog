@@ -1,0 +1,38 @@
+﻿@using System.Web.UI.WebControls
+@{
+    ViewBag.Title = "GitHub Contribute Notifier";
+}
+
+@section head
+{
+    @Styles.Render("~/Content/Projects.less")
+}
+
+@section scripts
+{
+}
+
+<div class="projects-container">
+    <div class="project-entity">
+        <h1 class="project-name">GitHub Contribute Notifier</h1>
+        <p>Github Contribute Notifier is an android app to help you keep your commits streak.</p>
+        <p>It shows your commits for last month/week and how long is your current streak. It also shows notification after 2 PM, if you haven't commit today yet.</p>
+        <br />
+        <h2 class="project-screens">Screenshots</h2>
+        <a href="https://github.com/YLiohenki/GitHub-Contribute-Notifier" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="~/Content/Images/github-fork.png" alt="Fork me on GitHub"></a>
+        <img src="~/Content/Images/Projects/GitHubContributeNotifier/screen1.png" alt="Screenshot 1" style="max-width: 30%;">
+        <img src="~/Content/Images/Projects/GitHubContributeNotifier/screen2.png" alt="Screenshot 2" style="max-width: 30%;">
+        <img src="~/Content/Images/Projects/GitHubContributeNotifier/screen3.png" alt="Screenshot 3" style="max-width: 30%;">
+        <br />
+        <h2 class="project-features">Features</h2>
+        <ul>
+            <li>Notifications to make commit, if you forgot to make one today</li>
+            <li>Saves and shows your commit streak (more than 365 days, which shows github)</li>
+            <li>Graph of last week/months commits</li>
+            <li>Commit streak challenges</li>
+        </ul>
+        <h1 class="project-name">What's being used</h1>
+        <p>Xamarin (without Xamarin.Forms)</p>
+        <p>BarChart for Xamarin</p>
+    </div>
+</div>
