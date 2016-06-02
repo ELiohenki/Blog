@@ -57,7 +57,8 @@ var Selfsite;
         })();
         Blog.TumblrService = TumblrService;
         ;
-        angular.module("selfsite").service("tumblrService", TumblrService);
+        angular
+            .module("selfsite")
+            .service("tumblrService", TumblrService);
     })(Blog = Selfsite.Blog || (Selfsite.Blog = {}));
 })(Selfsite || (Selfsite = {}));
-//# sourceMappingURL=tumblrService.js.map

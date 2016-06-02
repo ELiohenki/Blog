@@ -8,4 +8,3 @@ var Selfsite;
     })();
     Selfsite.Post = Post;
 })(Selfsite || (Selfsite = {}));
-//# sourceMappingURL=types.js.map

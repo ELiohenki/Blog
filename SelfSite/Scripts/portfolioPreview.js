@@ -10,4 +10,3 @@ $(document).ready(function () {
         gallery.init();
     });
 });
-//# sourceMappingURL=portfolioPreview.js.map

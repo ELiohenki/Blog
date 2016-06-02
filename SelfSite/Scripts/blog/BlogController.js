@@ -21,7 +21,8 @@ var Selfsite;
             return BlogController;
         })();
         Blog.BlogController = BlogController;
-        angular.module("selfsite").controller("blogController", BlogController);
+        angular
+            .module("selfsite")
+            .controller("blogController", BlogController);
     })(Blog = Selfsite.Blog || (Selfsite.Blog = {}));
 })(Selfsite || (Selfsite = {}));
-//# sourceMappingURL=BlogController.js.map
