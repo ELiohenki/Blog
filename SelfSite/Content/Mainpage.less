@@ -325,28 +325,33 @@ hr.thick-light {
 
     .button {
         display: inline-block;
-        width: 90px;
-        height: 90px;
+        width: 130px;
+        height: 130px;
         padding: 0px;
         margin: 3px;
-        border: 2px;
+        border: 0px;
         float: none;
         display: inline-block;
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 90px 90px;
         background-color: white;
-        img{
+        outline:none;
+
+        img {
             width: 90px;
             height: 90px;
         }
+
         p {
             font-size: 40px;
             font-weight: 700;
         }
     }
-    .button.is-checked{
-        border: solid black;
+
+    .button.is-checked {
+        background-color: #add4ff;
+        border-radius: 65px;
     }
 }
 
