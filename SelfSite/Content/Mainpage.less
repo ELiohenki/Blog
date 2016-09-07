@@ -308,7 +308,17 @@ hr.thick-light {
     }
 }
 
-
+.btn-checked-gradient (@imgUrl: 'Images/All.png', @origin: circle closest-side, @start: #ffffff, @stop: #000000) {
+    background-image: url(@imgUrl);
+    &.is-checked{
+        background-size: 95px 95px;
+	    background-image: url(@imgUrl), -webkit-radial-gradient(@origin, @start, @stop 110%);
+	    background-image: url(@imgUrl), -moz-radial-gradient(@origin, @start, @stop 110%);
+	    background-image: url(@imgUrl), -o-radial-gradient(@origin, @start, @stop 110%);
+	    background-image: url(@imgUrl), -ms-radial-gradient(@origin, @start, @stop 110%);
+	    background-image: url(@imgUrl), radial-gradient(@origin, @start, @stop 110%);
+    }
+}
 
 #portfolio_filters_by_technology, #portfolio_filters_by_area {
     display: inline-block;
@@ -326,6 +336,27 @@ hr.thick-light {
     }
 
     .button {
+
+        &.filter-all {
+            .btn-checked-gradient('Images/All.png', circle closest-side, cornflowerblue, white);
+        }
+
+        &.filter-backend {
+            .btn-checked-gradient('Images/BackEnd.png', circle closest-side, cornflowerblue, white);
+        }
+
+        &.filter-frontend {
+            .btn-checked-gradient('Images/FrontEnd.png', circle closest-side, cornflowerblue, white);
+        }
+
+        &.filter-desktop {
+            .btn-checked-gradient('Images/Desktop.png', circle closest-side, cornflowerblue, white);
+        }
+
+        &.filter-mobile {
+            .btn-checked-gradient('Images/Mobile.png', circle closest-side, cornflowerblue, white);
+        }
+
         display: inline-block;
         width: 130px;
         height: 130px;
@@ -338,7 +369,8 @@ hr.thick-light {
         background-repeat: no-repeat;
         background-size: 90px 90px;
         background-color: white;
-        outline:none;
+        outline: none;
+
 
         img {
             width: 90px;
@@ -349,11 +381,6 @@ hr.thick-light {
             font-size: 40px;
             font-weight: 700;
         }
-    }
-
-    .button.is-checked {
-        background-color: #add4ff;
-        border-radius: 65px;
     }
 }
 
