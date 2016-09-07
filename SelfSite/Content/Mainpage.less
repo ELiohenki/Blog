@@ -322,18 +322,44 @@ hr.thick-light {
         margin: auto;
         display: inline-block;
         margin: auto;
+        text-align: center;
     }
 
     .button {
         display: inline-block;
-        height: 30px;
-        min-width: 135px;
+        width: 130px;
+        height: 130px;
+        padding: 0px;
+        margin: 3px;
+        border: 0px;
+        float: none;
+        display: inline-block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 90px 90px;
+        background-color: white;
+        outline:none;
+
+        img {
+            width: 90px;
+            height: 90px;
+        }
+
+        p {
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+
+    .button.is-checked {
+        background-color: #add4ff;
+        border-radius: 65px;
     }
 }
 
 .contacts-message {
     margin: auto;
-    width:100%;
+    width: 100%;
     max-width: 500px;
 
     h3 {
