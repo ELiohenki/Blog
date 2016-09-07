@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfSite", "SelfSite\SelfSite.csproj", "{A9B1DA5D-1432-43A4-BAA4-D40EAD6B5BB8}"
 EndProject
@@ -21,8 +21,8 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A9B1DA5D-1432-43A4-BAA4-D40EAD6B5BB8}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{A9B1DA5D-1432-43A4-BAA4-D40EAD6B5BB8}.Debug|Any CPU.Build.0 = Debug|x86
+		{A9B1DA5D-1432-43A4-BAA4-D40EAD6B5BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9B1DA5D-1432-43A4-BAA4-D40EAD6B5BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9B1DA5D-1432-43A4-BAA4-D40EAD6B5BB8}.Debug|x86.ActiveCfg = Debug|x86
 		{A9B1DA5D-1432-43A4-BAA4-D40EAD6B5BB8}.Debug|x86.Build.0 = Debug|x86
 		{A9B1DA5D-1432-43A4-BAA4-D40EAD6B5BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU

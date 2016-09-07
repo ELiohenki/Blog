@@ -45,6 +45,7 @@ build/
 *.pidb
 *.log
 *.scc
+*.js.map
 
 # Visual C++ cache files
 ipch/
@@ -157,3 +158,5 @@ $RECYCLE.BIN/
 *.pubxml
 SelfSite/Properties
 
+*.map
+*.map
