@@ -207,12 +207,14 @@ hr.thick-light {
         display: flex;
         overflow: hidden;
         left: 0px;
-        min-height: 50px;
 
         p {
             text-align: center;
             width: 100%;
             line-height: 24px;
+            font-size: 20px;
+            line-height: calc(20px + 0.1vw);
+            font-size: calc(20px + 0.1vw);
         }
     }
 
@@ -234,7 +236,7 @@ hr.thick-light {
     }
 
     .portfolio-item:hover .name {
-        height: 20%;
+        height: 25%;
     }
 }
 
@@ -336,7 +338,6 @@ hr.thick-light {
     }
 
     .button {
-
         &.filter-all {
             .btn-checked-gradient('Images/All.png', circle closest-side, cornflowerblue, white);
         }
